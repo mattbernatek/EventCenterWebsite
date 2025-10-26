@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Resonance Piano Lounge</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2077af6e1d.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
+    <!-- Navigation bar section -->
     <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/Logo.png" alt="The Resonance Piano Lounge Logo">
+        </a>
 
+        <i class="fa-solid fa-bars menu-toggle" onclick="toggleMenu()"></i>
+
+        <ul class="navigation" id="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+        </ul>
     </nav>
 
     <main>
@@ -34,5 +47,12 @@
     <footer>
 
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("navigation");
+            menu.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
