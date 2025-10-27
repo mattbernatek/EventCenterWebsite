@@ -3,4 +3,48 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+
+    /* Adding a colour palette for easier styling later on */
+    --timberwolf: #d8d8d8ff;
+    --walnut-brown: #525044ff;
+    --eerie-black: #222324ff;
+    --white: #fefefeff;
+    --black-olive: #3b3a35ff;
+
+    --background-color: var(--eerie-black);
+    --text-color: var(--timberwolf);
+    --accent-color: var(--walnut-brown);
+}
+
+.navbar {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    width: 100%;
+}
+
+.navbar .navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .navigation li {
+    list-style: none;
+}
+
+.navbar .navigation a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-right: 25px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar .menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 40px;
+    color: var(--text-color);
 }
