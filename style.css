@@ -14,6 +14,7 @@
     --background-color: var(--eerie-black);
     --text-color: var(--timberwolf);
     --accent-color: var(--walnut-brown);
+    --button: var(--white);
 }
 
 .navbar {
@@ -23,6 +24,7 @@
     align-items: center;
     padding: 10px 40px;
     width: 100%;
+    /* position: fixed; */
 }
 
 .navbar .navigation {
@@ -40,6 +42,11 @@
     margin-right: 25px;
     font-size: 1.5em;
     font-weight: bold;
+    
+}
+
+.navbar .navigation a:hover {
+    color: gold;
 }
 
 .navbar .menu-toggle {
@@ -48,3 +55,50 @@
     font-size: 40px;
     color: var(--text-color);
 }
+
+.hero {
+    background: linear-gradient(rgba(34, 35, 36, 1.2), rgba(34, 35, 36, 0.3)), url(images/Piano.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;    
+}
+
+.hero .hero-content h1 {
+    color: var(--text-color);
+    font-size: 5.5em;
+}
+
+.hero .hero-content p {
+    color: var(--text-color);
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.btn {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: var(--button);
+    display: inline-block;
+    margin-top: 65px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: var(--background-color);
+    border-radius: 30px;
+    /* Transition adds a nice effect to the button when the btn:hover is activated */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+    color: var(--button);
+}
+
+
+
