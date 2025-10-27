@@ -100,5 +100,65 @@
     color: var(--button);
 }
 
+.welcome-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    width: 100%;
+    padding: 50px;
+    background: linear-gradient(to bottom, var(--background-color) 0%, white 60%);
+}
 
+.welcome-content .welcome-column1 {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
 
+.welcome-content .welcome-column2 {
+    width: 52%;
+    }
+
+.welcome-column2 .imgbox {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-column2 .imgbox img {
+    object-fit: cover;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.welcome .welcome-content .welcome-column1 h1 {
+    font-size: 3em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.welcome .welcome-content .welcome-column1 p {
+    font-style: italic;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.welcome .welcome-content .welcome-column1 h2 {
+    margin-top: 25px;
+}
+
+.highlights {
+    display: flex;
+    flex-direction: column;
+}
+
+.highlights .highlights-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
