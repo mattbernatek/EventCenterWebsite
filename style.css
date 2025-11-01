@@ -57,7 +57,7 @@
 }
 
 .hero {
-    background: linear-gradient(rgba(34, 35, 36, 1.2), rgba(34, 35, 36, 0.3)), url(images/Piano.jpg);
+    background: linear-gradient(rgba(34, 35, 36, 1), rgba(34, 35, 36, 0.3)), url(images/Piano.jpg);
     background-size: cover;
     min-height: 100vh;
     display: flex;
@@ -154,6 +154,7 @@
 .highlights {
     display: flex;
     flex-direction: column;
+    padding: 60px;
 }
 
 .highlights .highlights-title {
@@ -161,4 +162,108 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.highlights .highlights-title h3 {
+    font-size: 2.5em;
+}
+
+.highlights .highlights-title p {
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.event-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-cards .event-card {
+    width: 340px;
+    border: solid 20px white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    perspective: 1000px;
+    position: relative;
+}
+
+.event-cards .event-card .imagebox {
+    height: 350px;
+    width: 100%;
+}
+
+.event-cards .event-card .imagebox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event-cards .event-card .card-content {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.CTA {
+    padding: 60px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+.cta-content h3 {
+    font-size: 2.5em;
+}
+
+.CTA .cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.CTA .cta-content .btn2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-top: 50px;
+    padding: 15px 20px;
+    text-decoration: none;
+    background-color: var(--black-olive);
+    color: var(--timberwolf);
+    border-radius: 30px;
+    /* Transition adds a nice effect to the button when the btn:hover is activated */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn2:hover {
+    background-color: var(--accent-color);
+}
+
+.footer {
+    background-color: var(--background-color);
+    color: var(--timberwolf);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
 }
