@@ -3,7 +3,10 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Playfair Display', serif;
+}
 
+:root {
     /* Adding a colour palette for easier styling later on */
     --timberwolf: #d8d8d8ff;
     --walnut-brown: #525044ff;
@@ -24,7 +27,7 @@
     align-items: center;
     padding: 10px 40px;
     width: 100%;
-    /* position: fixed; */
+    position: fixed;
 }
 
 .navbar .navigation {
@@ -105,7 +108,7 @@
     justify-content: space-between;
     gap: 35px;
     width: 100%;
-    padding: 50px;
+    padding: 100px 10%;
     background: linear-gradient(to bottom, var(--background-color) 0%, white 60%);
 }
 
@@ -154,7 +157,7 @@
 .highlights {
     display: flex;
     flex-direction: column;
-    padding: 60px;
+    padding: 100px 10%;
 }
 
 .highlights .highlights-title {
@@ -212,21 +215,24 @@
 
 .CTA {
     padding: 60px;
-    /* display: flex;
+    background: linear-gradient(rgba(34, 35, 36, 0.1), rgba(34, 35, 36, 0.8)), url(images/ManWithDrink.png);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center; */
 }
 
 .cta-content h3 {
-    font-size: 2.5em;
+    font-size: 3.5em;
+    color: var(--white);
 }
 
 .CTA .cta-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .CTA .cta-content .btn2 {
@@ -237,15 +243,43 @@
     margin-top: 50px;
     padding: 15px 20px;
     text-decoration: none;
-    background-color: var(--black-olive);
-    color: var(--timberwolf);
+    background-color: var(--button);
+    color: var(--background-color);
     border-radius: 30px;
     /* Transition adds a nice effect to the button when the btn:hover is activated */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn2:hover {
+.CTA .cta-content .btn2:hover {
     background-color: var(--accent-color);
+    color: var(--button)
+}
+
+.story {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 10%;
+    background: linear-gradient(to bottom, var(--timberwolf) 0%, white 100%);
+    min-height: 100vh;
+}
+
+.story .story-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.story .story-text {
+    flex: 1;
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.story .story-text h2 {
+    font-size: 3em;
+    margin-bottom: 25px;
 }
 
 .footer {
