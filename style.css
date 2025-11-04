@@ -389,7 +389,6 @@
 /* Events page styling */
 
 .events {
-    min-height: 75vh;
     padding: 50px 10%;
     text-align: center;
     background: linear-gradient(to bottom, var(--timberwolf) 0%, var(--white) 100%);
@@ -439,6 +438,77 @@
     font-style: italic;
     text-align: center;
 }
+
+.special-events {
+    padding: 50px 10%;
+}
+
+.special-events h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.special-events .special-event {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 100px;
+}
+
+.special-events .special-event-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.special-event-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 50%;
+    max-width: 50%;
+}
+
+.special-events .special-event .special-event-text h3,
+.special-events .special-event-reverse .special-event-text h3 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.special-events .special-event .special-event-text p, 
+.special-events .special-event-reverse .special-event-text p {
+    font-size: 1.3em;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.special-event-text li {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.special-event-image {
+    flex: 1 1 50%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.special-event-image img, .special-event-reverse img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15)
+}
+
 
 
 /* Footer Section Across Pages */
