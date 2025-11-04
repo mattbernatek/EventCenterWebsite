@@ -388,7 +388,57 @@
 
 /* Events page styling */
 
+.events {
+    min-height: 75vh;
+    padding: 50px 10%;
+    text-align: center;
+    background: linear-gradient(to bottom, var(--timberwolf) 0%, var(--white) 100%);
+}
 
+.events h2 {
+    font-size: 3em;
+}
+.events p {
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+
+.events-table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.events-table th, .events-table td {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-size: 1.2em;
+}
+
+.events-table th {
+    background-color: var(--black-olive);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+}
+
+.events-table tr:hover {
+    background-color: var(--walnut-brown);
+    transition: background-color 0.3s ease;
+}
+
+.disclaimer {
+    display: block;
+    margin-top: 20px;
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: center;
+}
 
 
 /* Footer Section Across Pages */
