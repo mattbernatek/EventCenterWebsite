@@ -98,7 +98,7 @@
             
             <div class="special-event-text">
                 <h3>New Year's Jazz Soirée</h3>
-                <p>Celebrate the new year in style with live jazz, champagne, and a midnight toast. The night features guest performers and a countdown set led by Marcus Green behind the bar.</p>
+                <p>Celebrate the new year in style with live jazz, champagne, and a midnight toast. The night features guest performers and a specially crafted cocktail menu by Marcus Green behind the bar.</p>
                 <ul>
                     <li>&#128197; December 31, 2025</li>
                     <li>&#127925; Live performances from the Blue Note Quartet</li>
@@ -112,8 +112,38 @@
         </article>
     </section>
 
-    <section class="reservation">
+    <section class="reservation" id="reservation">
+        <h2>Reserve Your Table</h2>
+        <p>Plan your perfect evening at The Resonance. Please fill out the form below, and our team will confirm your reservation shortly.</p>
 
+        <form action="#" method="post" class="reservation-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" min="1" max="10" placeholder="2" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message or Special Requests</label>
+                <textarea id="message" name="message" rows="5" placeholder="Let us know how we can make your evening special" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit Reservation</button>
+        </form>
     </section>
 
     <footer class="footer">

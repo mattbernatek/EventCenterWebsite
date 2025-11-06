@@ -98,7 +98,7 @@
     text-decoration: none;
     color: var(--background-color);
     border-radius: 30px;
-    /* Transition adds a nice effect to the button when the btn:hover is activated */
+    cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -126,7 +126,7 @@
 }
 
 .welcome-content .welcome-column2 {
-    width: 52%;
+    max-width: 52%;
     }
 
 .welcome-column2 .imgbox {
@@ -138,8 +138,8 @@
 }
 
 .welcome-column2 .imgbox img {
-    object-fit: cover;
-    height: 500px;
+    width: 100%;
+    height: auto;
     border-radius: 20px;
 }
 
@@ -237,26 +237,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.CTA .cta-content .btn2 {
-    font-size: 1.5em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    display: inline-block;
-    margin-top: 50px;
-    padding: 15px 20px;
-    text-decoration: none;
-    background-color: var(--button);
-    color: var(--background-color);
-    border-radius: 30px;
-    /* Transition adds a nice effect to the button when the btn:hover is activated */
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.CTA .cta-content .btn2:hover {
-    background-color: var(--accent-color);
-    color: var(--button)
 }
 
 /* About page styling */
@@ -439,6 +419,8 @@
     text-align: center;
 }
 
+/* Special events section */
+
 .special-events {
     padding: 50px 10%;
 }
@@ -509,7 +491,56 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15)
 }
 
+/* Reservation section styling */
 
+.reservation {
+    padding: 50px 10%;
+    background-color: var(--eerie-black);
+    color: var(--white);
+    text-align: center;
+}
+
+.reservation h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.reservation p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+/* Reservation form layout */
+
+.reservation-form {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: left;
+}
+
+/* Inputs and labels */
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
 
 /* Footer Section Across Pages */
 
