@@ -66,7 +66,7 @@
 .hero {
     background: linear-gradient(rgba(34, 35, 36, 1), rgba(34, 35, 36, 0.3)), url(images/Piano.jpg);
     background-size: cover;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +93,7 @@
     letter-spacing: 2px;
     background-color: var(--button);
     display: inline-block;
-    margin-top: 65px;
+    margin-top: 35px;
     padding: 15px 20px;
     text-decoration: none;
     color: var(--background-color);
@@ -161,7 +161,7 @@
 .highlights {
     display: flex;
     flex-direction: column;
-    padding: 100px 10%;
+    padding: 50px 10%;
 }
 
 .highlights .highlights-title {
@@ -294,6 +294,7 @@
     flex-wrap: wrap;
     flex-direction: row-reverse;
     align-items: center;
+    margin-bottom: 50px;
     gap: 60px;
 }
 
@@ -332,7 +333,7 @@
 }
 
 .gallery {
-    padding: 100px 10%;
+    padding: 50px 10%;
     text-align: center;
 }
 
@@ -382,8 +383,15 @@
     font-size: 1.3em;
 }
 
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 .events-table {
     width: 100%;
+    min-width: 700px;
     margin-top: 30px;
     border-collapse: collapse;
     background-color: var(--white);
@@ -562,4 +570,121 @@
     color: white;
     text-decoration: none;
     font-size: 20px;
+}
+@media (max-width: 1024px) {
+    .welcome .welcome-content .welcome-column2 {
+        display: flex;
+    }
+    
+    .story {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .story .story-image img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .CTA {
+        min-height: 70vh;
+        background-position: center;
+        padding: 50px 5%;
+    }
+
+    .reservation {
+        padding: 50px 10% 100px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar .navigation {
+        display: none;
+    }
+
+    .navbar .menu-toggle {
+        display: block;
+    }
+
+    .navbar .navigation.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        top: 80px;
+        right: 0;
+        left: 0;
+        background-color: var(--background-color);
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .navbar .navigation.active li {
+        margin: 5px 0;
+    }
+
+    .hero h1 { font-size: 2.5em;}
+    .hero p {font-size: 1.2em;}
+
+    .welcome-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .welcome-content .welcome-column1, .welcome-column2 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .welcome-content .welcome-column2 .imgbox {
+        display: none;
+    }
+
+    .event-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .CTA {
+        padding: 40px 20px;
+        min-height: 80vh;
+        background-position: center;
+    }
+
+    .cta-content h3 {
+        text-align: center;
+    }
+
+    .CTA .btn {
+        padding: 12px 20px;
+    }
+
+    .team .team-member, .team .team-member-reverse {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member-image {
+        max-width: 80%;
+    }
+
+    .story {
+        flex-direction: column;
+    }
+
+    .story-image {
+        display: flex;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+
 }
