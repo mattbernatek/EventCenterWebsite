@@ -1,3 +1,6 @@
+/* GLOBAL RESET AND ROOT VARIABLES */
+
+/* Reset default browser spacing and apply consistent sizing model */
 * {
     padding: 0;
     margin: 0;
@@ -6,8 +9,8 @@
     font-family: 'Playfair Display', serif;
 }
 
+/* Define a reusable color palette and main theme variables */
 :root {
-    /* Adding a colour palette for easier styling later on */
     --timberwolf: #d8d8d8ff;
     --walnut-brown: #525044ff;
     --eerie-black: #222324ff;
@@ -22,6 +25,7 @@
 
 /* Navbar section across all pages */
 
+/* Flexbox layout for evenly spaced logo and navigation links */
 .navbar {
     background-color: var(--background-color);
     display: flex;
@@ -32,6 +36,7 @@
     /* position: fixed; */
 }
 
+/* Desktop navigation setup. Hidden on mobile. */
 .navbar .navigation {
     display: flex;
     flex-direction: row;
@@ -46,14 +51,14 @@
     color: var(--text-color);
     margin-right: 25px;
     font-size: 1.5em;
-    font-weight: bold;
-    
+    font-weight: bold;  
 }
 
 .navbar .navigation a:hover {
     color: gold;
 }
 
+/* Mobile hamburger menu icon - hidden by default */
 .navbar .menu-toggle {
     display: none;
     cursor: pointer;
@@ -63,6 +68,9 @@
 
 /* Home page styling */
 
+/* HERO SECTION */
+
+/* Full-width hero with dark overlay and piano background image */
 .hero {
     background: linear-gradient(rgba(34, 35, 36, 1), rgba(34, 35, 36, 0.3)), url(images/Piano.jpg);
     background-size: cover;
@@ -72,10 +80,12 @@
     align-items: center;
 }
 
+/* Center the text within the hero section */
 .hero-content {
     text-align: center;    
 }
 
+/* Headline and tagline - large typography for strong visual impact */
 .hero .hero-content h1 {
     color: var(--text-color);
     font-size: 5.5em;
@@ -87,6 +97,7 @@
     margin-top: 20px;
 }
 
+/* Universal button style reused throughout the site */
 .btn {
     font-size: 1.5em;
     text-transform: uppercase;
@@ -107,6 +118,9 @@
     color: var(--button);
 }
 
+/* WELCOME SECTION */
+
+/* Two-column layout: introduction text + mixologist image */
 .welcome-content {
     display: flex;
     justify-content: space-between;
@@ -116,6 +130,7 @@
     background: linear-gradient(to bottom, var(--background-color) 0%, white 60%);
 }
 
+/* Column 1 - text area centered vertically and horizontally */
 .welcome-content .welcome-column1 {
     width: 35%;
     display: flex;
@@ -125,6 +140,7 @@
     text-align: center;
 }
 
+/* Column 2 - image area with flexible sizing */
 .welcome-content .welcome-column2 {
     max-width: 52%;
     }
@@ -158,6 +174,9 @@
     margin-top: 25px;
 }
 
+/* EVENT HIGHLIGHTS SECTION */
+
+/* Section introducing weekly event highlights */
 .highlights {
     display: flex;
     flex-direction: column;
@@ -181,6 +200,7 @@
     margin-top: 15px;
 }
 
+/* Card grid for event teasers */
 .event-cards {
     display: flex;
     flex-direction: row;
@@ -190,6 +210,7 @@
     align-items: center;
 }
 
+/* Each card styled with border and subtle shadow for depth */
 .event-cards .event-card {
     width: 340px;
     border: solid 20px white;
@@ -217,8 +238,12 @@
     font-size: 1.2em;
 }
 
+/* CALL-TO-ACTION Section */
+
+/* Full-width section with background image encouraging the user to visit about.html */
 .CTA {
     padding: 60px;
+    /* Linear gradient overlay is used for contrast against the background photo */
     background: linear-gradient(rgba(34, 35, 36, 0.1), rgba(34, 35, 36, 0.8)), url(images/ManWithDrink.png);
     background-size: cover;
     min-height: 100vh;
@@ -239,8 +264,11 @@
     align-items: center;
 }
 
-/* About page styling */
+/* ABOUT PAGE */
 
+/* STORY SECTION */
+
+/* Alternating text/image layout telling the lounge's origin story */
 .story {
     display: flex;
     align-items: center;
@@ -268,6 +296,9 @@
     margin-bottom: 25px;
 }
 
+/* TEAM SECTION */
+
+/* Four team members displayed with alternating image/text alignment  */
 .team {
     padding: 50px 10%;
     background-color: var(--white);
@@ -289,6 +320,7 @@
     margin-bottom: 50px;
 }
 
+/* reverse class creates alternating layouts */
 .team .team-member-reverse {
     display: flex;
     flex-wrap: wrap;
@@ -332,6 +364,9 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15)
 }
 
+/* GALLERY SECTION */
+
+/* Responsive image grid using CSS Grid with auto-fit */
 .gallery {
     padding: 50px 10%;
     text-align: center;
@@ -355,6 +390,7 @@
     border-radius: 15px;
 }
 
+/* Hover zoom and brightness for interactivity */
 .gallery-item:hover img {
     transform: scale(1.05);
     filter: brightness(1.1);
@@ -367,7 +403,7 @@
     color: var(--background-color);
 }
 
-/* Events page styling */
+/* EVENTS PAGE STYLING */
 
 .events {
     padding: 50px 10%;
@@ -383,12 +419,15 @@
     font-size: 1.3em;
 }
 
+/* Table wrapper allows for horizontal scroll on small screens */
 .table-container {
     width: 100%;
+    /* Prevents table overflow; enables mobile swipe scrolling */
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
 
+/* Table styled for clarity - dark headers and white body */
 .events-table {
     width: 100%;
     min-width: 700px;
@@ -414,11 +453,13 @@
     font-size: 1.2em;
 }
 
+/* Subtle hover effect to highlight active rows */
 .events-table tr:hover {
     background-color: var(--walnut-brown);
     transition: background-color 0.3s ease;
 }
 
+/* Disclaimer note below the table */
 .disclaimer {
     display: block;
     margin-top: 20px;
@@ -427,8 +468,9 @@
     text-align: center;
 }
 
-/* Special events section */
+/* SPECIAL EVENTS SECTION */
 
+/* Two-feature laytout with alternating image/text positions */
 .special-events {
     padding: 50px 10%;
 }
@@ -439,6 +481,7 @@
     margin-bottom: 100px;
 }
 
+/* Special event and special event reverse allow for alternating layout rythm */
 .special-events .special-event {
     display: flex;
     flex-direction: row;
@@ -499,8 +542,9 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15)
 }
 
-/* Reservation section styling */
+/* RESERVATION FORM SECTION */
 
+/* Dark background to set apart from previous light sections */
 .reservation {
     padding: 50px 10%;
     background-color: var(--eerie-black);
@@ -518,11 +562,11 @@
     margin-bottom: 40px;
 }
 
-/* Reservation form layout */
-
+/* Centralised form layout with consistent spacing */
 .reservation-form {
     max-width: 700px;
     margin: 0 auto;
+    /* Uses flex layout for vertical stacking */
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -538,6 +582,7 @@
 
 }
 
+/* Inputs and textarea share styling for consistency */
 .form-group input, .form-group textarea {
     width: 100%;
     padding: 10px 15px;
@@ -550,12 +595,14 @@
     border-color: var(--accent-color);
 }
 
-/* Footer Section Across Pages */
+/* FOOTER SECTION */
 
+/* Simple centered footer with brand colors and social icons */
 .footer {
     background-color: var(--background-color);
     color: var(--timberwolf);
     width: 100%;
+    /* Flex layout centers content vertically and hotizontally */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -571,6 +618,14 @@
     text-decoration: none;
     font-size: 20px;
 }
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets and iPads (≤1024px)
+- Adjust heights of large sections
+- Stack story content vertically
+- Reposition CTA background image for better visibility */
+
 @media (max-width: 1024px) {
     .welcome .welcome-content .welcome-column2 {
         display: flex;
@@ -596,6 +651,12 @@
         padding: 50px 10% 100px;
     }
 }
+
+/* Mobile devices (≤900px)
+   - Activate hamburger menu
+   - Stack columns vertically
+   - Simplify layout and spacing
+   - Remove an image that breaks layout */
 
 @media (max-width: 900px) {
     .navbar .navigation {
